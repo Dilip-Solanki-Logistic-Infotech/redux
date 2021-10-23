@@ -46,8 +46,8 @@ export const counterSlice = createSlice({
       state.value += action.payload;
     },
     clearState: (state) => {
-      state.value = initialState.value;
-      state.status = initialState.status;
+      state = initialState;
+      return state;
     },
   },
   // The `extraReducers` field lets the slice handle actions defined elsewhere,

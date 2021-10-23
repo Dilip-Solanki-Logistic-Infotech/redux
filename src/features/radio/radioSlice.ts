@@ -1,25 +1,29 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { RootState } from '../../redux/store';
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { RootState } from "../../redux/store";
 
 export interface RadioState {
   value: string;
 }
 
 const initialState: RadioState = {
-  value: ""
+  value: "",
 };
 
 export const radioSlice = createSlice({
-  name: 'radio',
+  name: "radio",
   initialState,
   reducers: {
     changeValue: (state, action: PayloadAction<string>) => {
       state.value = action.payload;
     },
+    clearState: (state) => {
+      state = initialState;
+      return state;
+    },
   },
 });
 
-export const { changeValue } = radioSlice.actions;
+export const { changeValue, clearState } = radioSlice.actions;
 
 export const selectText = (state: RootState) => state.radio.value;
 
