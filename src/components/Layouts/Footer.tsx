@@ -5,7 +5,9 @@ const Footer = () => {
     <footer className="footer fixed-bottom bg-light col-md-9 col-lg-10 py-3 ms-sm-auto px-md-4">
       <div className="container">
         <div className="text-center">
-          <span className="text-muted">Created by: Dilip Solanki</span>
+          <span className="text-muted">
+            Created by: Dilip Solanki (Logistic Infotech)
+          </span>
         </div>
       </div>
     </footer>

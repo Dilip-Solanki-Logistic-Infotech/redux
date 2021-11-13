@@ -54,6 +54,16 @@ const Sidebar = () => {
               Radio
             </NavLink>
           </li>
+          <li className="nav-item">
+            <NavLink
+              exact
+              to="/movie"
+              className="nav-link"
+              activeClassName="active"
+            >
+              Movie
+            </NavLink>
+          </li>
         </ul>
       </div>
     </nav>

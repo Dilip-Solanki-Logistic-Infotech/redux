@@ -6,6 +6,7 @@ import Textfield from "../components/Textfield";
 import Select from "../components/Select";
 import Checkbox from "../components/Checkbox";
 import Radio from "../components/Radio";
+import Movie from "../components/Movie";
 
 const Routes = () => {
   return (
@@ -17,6 +18,7 @@ const Routes = () => {
           <Route exact path="/select" component={Select} />
           <Route exact path="/checkbox" component={Checkbox} />
           <Route exact path="/radio" component={Radio} />
+          <Route exact path="/movie" component={Movie} />
         </Switch>
       </Main>
     </BrowserRouter>
